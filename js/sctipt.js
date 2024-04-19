@@ -36,10 +36,18 @@ const Data = [
 ]
 
 
+
+
+
+
+
+
+
+
 //================HTML Stuff================
 
 const AllProducts = document.getElementById('AllProducts')
-const BasketContainer = document.getElementById('BasketContainer')
+const BasketContainer = document.getElementById('SecondSwiperHome')
 
 
 

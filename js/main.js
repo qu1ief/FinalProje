@@ -107,3 +107,15 @@ function getDirection() {
 
   return direction;
 }
+
+
+
+
+
+// detail fir 
+
+
+
+
+
+
