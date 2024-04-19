@@ -5,7 +5,7 @@
 }
 
 main {
-    background-color: rgba(220, 220, 220, 0.168);
+    background-color: rgba(220, 220, 220, 0.245);
 }
 
 a {
@@ -19,6 +19,10 @@ li {
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+html {
+    overflow-x: hidden !important;
 }
 
 .header__all {
@@ -190,7 +194,7 @@ img {
 @media only screen and (max-width: 443px) {
     .header__2__serch__inpdiv {
 
-        
+
         input {
             width: 150px !important;
             height: 50px;
@@ -251,18 +255,20 @@ img {
     background-color: #f6f6fc65;
 }
 
-@media only screen and (max-width: 960px) {
+.header__section4 {
+    display: none;
+}
+
+@media only screen and (max-width: 950px) {
     .header__section3 {
         display: none;
     }
-}
-@media only screen and (max-width: 1090px) {
-    .header__section3 {
-       a{
-        font-size: 16px;
-       }
+
+    .header__section4 {
+        display: block !important;
     }
 }
+
 
 /* header section 4 design  */
 .header__section4__all {
@@ -307,407 +313,96 @@ img {
 }
 
 
-/* section1 design*/
+/* section 1 design  */
 
-
-
-.olter__imgs{
-    width: 7% !important;
-    /* height: 10% !important; */
-    border: 1px solid red;
-}
-
-
-.singlesection1__left__buttom{
-    /* border: 2px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-}
-.Singlesection1__right{
-    /* border: 2px solid orange; */
-    margin-top: 40px;
-    h3{
-        font-size: 30px;
-    }
-}
-.flexdiv{
-    display: flex;
-    gap: 10px;
-    p{
-        font-size: 20px;
-    }
-}
-.Singlesection1__left{
-    /* border: 5px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.Singlesection1__all{
-    display: flex;
-  
-}
-.car__price{
-    font-size: 30px;
-    color: #ea4954;
-}
-.singleBtn{
-    width: 100px;
-    height: 40px;
-    background-color:#ea414c ;
-    border: none;
-    border-radius: 10px;
-    color: white;
-}
-
-@media only screen and (max-width: 1200px) {
-   .Singlesection1__left{
-    width: 70%;
-   }
-  }
-
-  @media only screen and (max-width: 962px) {
-    .Singlesection1__all{
-        display: flex;
-        flex-direction: column;
-    }
-    .Singlesection1__left{
-        width: 100%;
-    }
-    .Singlesection1__right{
-        width: 100%;
-    }
-}
-
-
-
-
-/* design tabs */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
-  .SingglSec__tab__left{
-p{
-    color: rgba(0, 0, 0, 0.627);
-}
-/* border: 2px solid blue; */
-}
-.tab{
-    /* border: 2px solid red; */
-}
-.SingleSection2{
-    /* border: 3px solid green; */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-}
-.SingleSec2__tab__right{
-    display: flex;
-}
-.SingleSec2__tab__right__text{
-    display: flex;
-    flex-direction: column;
-}
-.Single__raiting{
-    display: flex;
-    p{
-        color: gray;
-    }
-    i{
-        color: orange;
-    }
-}
-.SingleSec2__tab__right__buttom{
-    color: rgba(0, 0, 0, 0.726);
-}
-.SingleSec2__sendMail{
-   input{
-    width: 70%;
-    height: 30vh;
-   }
-}
-.Singlesendmail__form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    button{
-        width: 7%;
-        background-color: transparent;
-        height: 40px;
-        border: 1px solid gray;
-        border-radius: 8px;
-        margin-left: 30px;
-    }
-}
-
-@media only screen and (max-width: 780px) {
-   .Singlesendmail__form{
-    button{
-        width: 15%;
-    }
-   }
-  }
-
-  @media only screen and (max-width: 360px) {
-    .Singlesendmail__form{
-     button{
-         width: 19%;
-     }
-    }
-   }
-
-
-   /* sinleSec3 design  */
-.SingleSection3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.SingleSection3__name{
-    width: 80%;
-}
-   .Singlesec3__text{
-    display: flex;
-gap: 20px;
-}
-.Single__All__Products__First{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Single__All__Products__Second{
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-.Single__All__Products{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.SingleSec3__all{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:30px;
-    
-}
-.Single__Product__Price{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-    /* border: 2px solid red; */
-    width: 15rem;
-    height: auto !important;
-}
-.Single__Product__Price__all{
-    border: 3px solid green;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 1250px) {
-   .SingleSec3__all{
-display: flex;
-flex-direction: column;
-   }
-  }
-
-  @media only screen and (max-width: 998px) {
-    /* .SingleSec3__all{
- display: flex;
- flex-direction: column;
-    } */
-    .Single__All__Products{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-       
-       
-    }
-    .Single__All__Products__First{
-        width: 100% !important;
-        img{
-            width: 50% !important;
-        }
-    }
-   }
-   @media only screen and (max-width: 500px) {
-    /* .SingleSec3__all{
- display: flex;
- flex-direction: column;
-    } */
-    /* .Single__All__Products{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-       
-       
-    } */
-    .Single__All__Products__First{
-        display: flex;
-        flex-direction: column;
-    }
-    .Single__All__Products__Second{
-        display: flex;
-        width: 100% !important;
-        flex-direction: column;
-        img{width: 100% !important;}
-    }
-   }
-  
-
-/* section4 design  */
-
-.Singlesection4{
-    margin-top: 30px;
-    /* border: 2px solid red; */
-}
-.SingleSection4__top__card{
+.leftSide{
+    height: 330px;
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 250px;
-    height: 150px !important;
-    border-radius: 18px;
+    gap: 20px;
+    width: 300px;
+border-radius: 10px;
+margin-top: 10px;
 }
-.SingleSection4__buttom{
+.leftSide__box{
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 10px;
-    /* width: 50%; */
-    /* border: 2px solid orangered; */
+    flex-direction: column;
+    gap: 10px;  
 }
-.SingleSection4__all{
-    /* width: 100%; */
-    /* border: 3px solid black; */
-}
-.SingleSection4__top{
+.OrderBox{
     display: flex;
-    /* justify-content: end; */
-    /* align-items: center; */
-    gap: 10px;
-    /* border: 3px solid yellow; */
-    /* width: 50%; */
-}
-.SingleSection4__all{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: space-between;
+    font-size: 20px;
 
 }
-@media only screen and (max-width: 850px) {
-   .SingleSection4__all{
+.leftSide__box2{
     display: flex;
     flex-direction: column;
-   }
-   .SingleSection4__top{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-   }
-   .SingleSection4__top__card{
-    width: 40%;
-   }
-   .SingleSection4__buttom{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-   }
+    gap: 10px; 
+}
+.AccountBox{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px; 
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    /* .section1__all{
+        display: flex;
+        flex-direction: column;
+    } */
+  .leftSide{
+    display: none;
   }
-  @media only screen and (max-width: 650px) {
-.SingleSection4__top{
+    
+  }
+
+
+
+
+
+
+
+.WishSection1__card {
+    /* width: 80% !important; */
+
+}
+
+.FirstDivWish {
     display: flex;
+    gap: 20px;
+}
+
+
+
+.WishListSec1__Right {
+    /* border: 2px solid rgba(0, 255, 38, 0.549); */
+    display: flex;
+    gap: 10px;
     flex-direction: column;
-    width: 100%;
 }
-.SingleSection4__top__card{
-    width: 90%;
-}
-.SingleSection4__buttom{
+
+.all__card__WishList {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-   }
-
-
-
-
-
-   .SingleSection5__card{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-}
-.homesec7__endbtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   button{
-    border: none;
-border-radius: 20px;
-height: 30px;
-width: 200px;    
-   }
+    gap: 10px;
 }
 
 
 
-.section5__SingleSection {
+.Section1__cardWishlist {
     display: flex;
     justify-content: space-between;
 }
 
-.SingleSection5__card {
+.WishSection1__card {
     position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.396) !important;
+    height: 55vh !important;
+    background-color: white !important;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 
     img {
         height: 30vh;
@@ -715,15 +410,18 @@ width: 200px;
     }
 }
 
-.cardbodySingleSection5 {
+.CardBodyWishList {
     display: flex;
-    justify-content: center !important;
+    /* justify-content: center !important; */
     flex-direction: column;
     align-items: start;
     /* border: 1px solid red; */
+    i{
+        color: orangered;
+    }
 }
 
-.SingleSection5__wishlistdiv7 {
+.WishListDiv__WishList {
     position: absolute;
     transform: translate(50%, 50%);
     left: 60%;
@@ -739,15 +437,15 @@ width: 200px;
     }
 }
 
-.SingleSection5__card:hover .SingleSection5__wishlistdiv7 {
+.WishSection1__card:hover .WishListDiv__WishList {
     display: block;
 }
 
 
-.section5__SingleSection {
+.Section1__cardWishlist {
     display: flex;
     justify-content: space-between !important;
-    /* width: 100%; */
+    width: 100%;
 
     button {
         height: 30px;
@@ -759,79 +457,114 @@ width: 200px;
 
 }
 
-.section5__SingleSection__text {
+.Section1__WishList__text {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px !important;
 }
-.sec7buttons{
+.all__card__WishList{
+    display: flex !important;
     width: 100%;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    button{
-        font-size: 20px;
-        width: 30%;
-        border-radius: 10px;
-        background-color: transparent;
-        border: none;
-    }
-   
 }
 
-.SingleSection5__first{
-    display: flex;
-    gap: 10px;
-}
-.SingleSection5__second{
-    display: flex;
-    gap: 10px;
-}
-.SingleSection5__all{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-.SingleSec5__name__first{
-    /* border: 1px solid red; */
-    width: 74%;
-}
-.SingleSec5__name{
-    display: flex;
-    justify-content: center;
-flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-@media only screen and (max-width: 1180px) {
-   .SingleSection5__all{
-    display: flex;
-    flex-direction: column;
-   }
-   
-  }
-  @media only screen and (max-width: 621px) {
-    .SingleSection5__first{
-     display: flex;
-     flex-direction: column;
-    }
-    .SingleSection5__second{
+@media only screen and (max-width: 1100px) {
+    .prodSection2 {
         display: flex;
         flex-direction: column;
-        width:100% !important;
-       }
-      
+    }
+
+    .WishListSec1__Right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     
-   }
+    }
 
+    .ProdSection2__left {
+        width: 100%;
+    }
 
+    .prodSection2__left__top {
+        width: 100%;
 
-  /* footer design   000 */
+    }
+
+    .prodSection2__left__middle1 {
+        width: 100%;
+
+        input {
+            width: 40%;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .WishListSec1__Right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .all__card__WishList {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .WishSection1__card {
+        width: 50% !important;
+    }
+
+    .WishSection1__card {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .FirstDivWish {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .WishSection1__card {
+        width: 100% !important;
+
+        img {
+            width: 100% !important;
+        }
+    }
+}
+
+.section1__all{
+    display: flex;
+    justify-content: center !important;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.Wish__Name{
+    display: flex;
+    justify-content: space-between;
+    h2{
+        font-size: 40px;
+    }
+    button{
+        width: 150px;
+        margin-top: 12px;
+        border: none;
+        border: 1px solid rgba(128, 128, 128, 0.268);
+        background-color: pink;
+        color: rgb(237, 5, 5);
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+
+/* footer design   000 */
 
 footer{
     background-color: #082d5b;
