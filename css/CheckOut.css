@@ -283,6 +283,9 @@ html {
         background-color: white;
         gap: 50px;
     }
+    .header__section3{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -844,4 +847,14 @@ gap: 10px;
        }.footer{
         height: 1200px;
        }
+        }
+
+        .header__section4__all__icon{
+            padding: 10px;
+            a{
+                color: #000;
+                
+        }  
+        
+            
         }

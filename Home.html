@@ -20,7 +20,7 @@
     <header class="header__all">
         <div class="header__sect_1">
             <div class="header__sect__1__left">
-                <div class="header__top"><i class="fa-solid fa-phone"></i> dwdwdw+88012 3456 7894</div>
+                <div class="header__top"><i class="fa-solid fa-phone"></i> +88012 3456 7894</div>
                 <div class="header__top"><i class="fa-regular fa-envelope"></i>support@ui-lib.com</div>
                 <div class="res__img__header"><img src="https://bonik-react.vercel.app/assets/images/logo.svg" alt="">
                 </div>
@@ -45,12 +45,23 @@
             <div class="header__section2__left"><a href="./Home.html"> <img
                         src="https://bonik-react.vercel.app/assets/images/logo.svg" alt=""></a></div>
             <div class="header__section2__middle">
-                <div class="header__2__serch__inpdiv">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="search ...">
-                    <select name="" id="">
-                        <option value="">salam</option>
-                    </select>
+                <div class="serch__modal">
+                    <div class="header__2__serch__inpdiv">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input class="searchInput" type="text" placeholder="search ...">
+                        <select name="" id="">
+                            <option value="">Caregories</option>
+                        </select>
+                        <div id="inside__modal" class="inside__modal">
+
+
+
+                        </div>
+                    </div>
+                    <!-- <select name="" id="">
+                        <option value="">Caregories</option>
+                    </select> -->
                 </div>
             </div>
             <div class="header__section2__right">
@@ -81,10 +92,14 @@
     <div class="header__section4">
         <div class="header__section4__all">
 
-            <div class="header__section4__all__icon"> <i class="fa-solid fa-house"></i>Home</div>
-            <div class="header__section4__all__icon"> <i class="fa-solid fa-bars"></i>Category</div>
-            <div class="header__section4__all__icon"> <i class="fa-solid fa-key"></i>Let</div>
-            <div class="header__section4__all__icon"> <i class="fa-solid fa-user"></i>Accoubt</div>
+            <div class="header__section4__all__icon"> <a href="./Home.html"><i class="fa-solid fa-house"></i></a>Home
+            </div>
+            <div class="header__section4__all__icon"> <a href="./SingleProduct.html"><i class="fa-solid fa-bars"></i>
+                    Category</a></div>
+            <div class="header__section4__all__icon"> <a href="./ProductSearch.html"><i
+                        class="fa-solid fa-key"></i>Let</a></div>
+            <div class="header__section4__all__icon"> <a href="./CheckOut.html"><i
+                        class="fa-solid fa-user"></i>Accoubt</a></div>
         </div>
     </div>
     <main>
@@ -180,9 +195,9 @@
                 <div>
                     <div class="swiper secondSwiper ">
                         <h2>Top Deals</h2>
-                         <div id="SecondSwiperHome" class="swiper-wrapper secondwrapper">
-                          
-                                <!-- <div class="card homesection2__card" style="width: 18rem;">
+                        <div id="SecondSwiperHome" class="swiper-wrapper secondwrapper">
+
+                            <!-- <div class="card homesection2__card" style="width: 18rem;">
                                    <a href="./SingleProduct.html">
                                     <img src="https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fflash-2.png&w=640&q=75"
                                     class="card-img-top" alt="...">
@@ -209,8 +224,8 @@
                                 </div> -->
 
 
-                            </div>
-                            <!-- <div class="swiper-slide">
+                        </div>
+                        <!-- <div class="swiper-slide">
 
                                 <div class="card homesection2__card" style="width: 18rem;">
                                     <img src="https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fflash-3.png&w=384&q=75"
@@ -297,15 +312,15 @@
 
 
 
-                        </div>
-                        <!-- <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div> -->
                     </div>
-
+                    <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
                 </div>
 
-
             </div>
+
+
+        </div>
         </div>
         <section class="section3">
             <div class="section3__all">
@@ -489,7 +504,7 @@
 
                             </div>
 
-                           
+
 
 
 
@@ -1190,18 +1205,22 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptatibus officia animi
                             dicta quae nisi ab recusandae eos praesentium sint.</p>
                     </div>
-                   <div class="all__img__footer">
-                    <div class="playStore__img"><img
-                        src="data:image/png;base64,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"
-                        alt="">
-                    <p style="font-size: 10px;">Get it One <br>
-                        <strong style="font-size: 20px;">Google Pay</strong></p>
-                </div>
-                <div class="playStore__img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/512px-App_Store_%28iOS%29.svg.png" alt="">
-                <p style="font-size: 10px;">Get it One <br>
-                    <strong style="font-size: 18px;">Google Pay</strong></p>
-            </div>
-                   </div>
+                    <div class="all__img__footer">
+                        <div class="playStore__img"><img
+                                src="data:image/png;base64,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"
+                                alt="">
+                            <p style="font-size: 10px;">Get it One <br>
+                                <strong style="font-size: 20px;">Google Pay</strong>
+                            </p>
+                        </div>
+                        <div class="playStore__img"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/512px-App_Store_%28iOS%29.svg.png"
+                                alt="">
+                            <p style="font-size: 10px;">Get it One <br>
+                                <strong style="font-size: 18px;">Google Pay</strong>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="first__footer__right">
@@ -1245,7 +1264,7 @@
 
 
 
-<script src="./js/HomeScript.js"></script>
+    <script src="./js/HomeScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
 </body>

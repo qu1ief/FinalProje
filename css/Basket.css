@@ -286,6 +286,15 @@ html {
 
 
 }
+.header__section4__all__icon{
+    padding: 10px;
+    a{
+        color: #000;
+        
+}  
+
+    
+}
 
 @media only screen and (max-width: 950px) {
 
