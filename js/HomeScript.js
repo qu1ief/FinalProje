@@ -204,7 +204,7 @@ searchInput.addEventListener('blur',()=>{
     setTimeout(()=>{
         modal.style.display="none"
 
-    },1000)
+    },700)
 })
 
 
